@@ -37,8 +37,8 @@ const serviceData = [
     {
         icon: <RxCrop />,
         title: 'Learn Yoga',
-        description: 'Learn yoga for a healthier, more balanced life.',
-        link: 'http://127.0.0.1:5504/learn.html',
+        description: 'Learn yoga from Tim Senesi through his YouTube channel.',
+        link: 'https://www.youtube.com/@yogawithtim',
     },
 ];
 
