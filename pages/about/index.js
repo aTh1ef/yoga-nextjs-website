@@ -11,7 +11,7 @@ const About = () => {
     const [stars, setStars] = useState([]);
 
     const generateRandomCircles = () => {
-        const numCirclesPerSide = 10; // 10 bubbles on each side, 20 total
+        const numCirclesPerSide = 20; // 10 bubbles on each side, 20 total
         const newCircles = [];
 
         for (let side = 0; side < 2; side++) {
@@ -50,7 +50,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className='min-h-screen flex flex-col items-center justify-center bg-primary/60 p-8 relative'>
+        <div className='min-h-screen flex flex-col items-center justify-center bg-primary/60 p-4 relative'>
             {/* Background circles (now as pulsating bubbles) */}
             {circles.map((circle, index) => (
                 <div
@@ -89,8 +89,8 @@ const About = () => {
             ))}
 
             {/* Pendulums */}
-            <div className='absolute left-10 bottom-0' style={pendulumStyleLeft}></div>
-            <div className='absolute right-10 bottom-0' style={pendulumStyleRight}></div>
+            <div className='absolute left-10 bottom-10 md:bottom-0' style={pendulumStyleLeft}></div>
+            <div className='absolute right-10 bottom-10 md:bottom-0' style={pendulumStyleRight}></div>
 
             {/* About Us Container */}
             <motion.div
@@ -98,35 +98,35 @@ const About = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className='shadow-lg rounded-lg p-8 max-w-md w-full'
+                className='shadow-lg rounded-lg p-4 max-w-xs w-full md:max-w-md md:p-8'
                 style={{ 
                     backgroundColor: 'rgba(34, 34, 34, 0.8)',
                     color: 'white',
                     zIndex: 1 
                 }}
             >
-                <h1 className='text-2xl font-bold mb-6 text-center text-red-400'>
+                <h1 className='text-xl md:text-2xl font-bold mb-4 text-center text-red-400'>
                     About Us
                 </h1>
 
-                <p className='mb-4'>
-                    This project was developed by <span className='font-bold'>Ateef Hussain Sheikh</span>, <span className='font-bold'>Chaithanya</span>, <span className="font-bold">Disha Hebbar</span>, and <span className="font-bold">Jagannath</span> under the guidance of <span className="font-bold">Dr. Suresha D</span>. The project aims to provide different services related to yoga using new AI techniques and modern technology.
+                <p className='mb-2 text-sm md:text-base'>
+                    This project was developed by <span className='font-bold'>Ateef Hussain Sheikh</span> and has features that include a live AI model for assisting in yoga using PoseNet, p5.js, ml5.js, an AI model to upload yoga poses and detect their names using TensorFlow and Media Pipe, an AI health calculator and an AI Chatbot powered by the Gemini API, and the website is made using Next.js and Tailwind CSS.
                 </p>
 
-                <div className='mb-4'>
-                    <h2 className='text-lg font-semibold text-red-400'>
-                        <FaPhone className='inline-block mr-2' />
+                <div className='mb-2'>
+                    <h2 className='text-base md:text-lg font-semibold text-red-400'>
+                        <FaPhone className='inline-block mr-1 md:mr-2' />
                         Phone:
                     </h2>
-                    <p>+1 (987) 654-3210</p>
+                    <p className='text-sm md:text-base'>+91 9164747590</p>
                 </div>
 
-                <div className='mb-4'>
-                    <h2 className='text-lg font-semibold text-red-400'>
-                        <FaEnvelope className='inline-block mr-2' />
+                <div>
+                    <h2 className='text-base md:text-lg font-semibold text-red-400'>
+                        <FaEnvelope className='inline-block mr-1 md:mr-2' />
                         Email:
                     </h2>
-                    <p>yoga@example.com</p>
+                    <p className='text-sm md:text-base'>ateefksa@gmail.com</p>
                 </div>
             </motion.div>
         </div>

@@ -75,24 +75,36 @@ const Home = () => {
             </motion.div>
 
             <style jsx>{`
-                @media (min-width: 400px) and (max-width: 428px) and (min-height: 844px) and (max-height: 926px) {
-                    .content-wrapper {
-                        padding-top: 7rem;
-                    }
-                }
+    @media (min-width: 400px) and (max-width: 428px) and (min-height: 844px) and (max-height: 926px) {
+        .content-wrapper {
+            padding-top: 10rem !important;
+        }
+    }
 
-                @media (min-width: 360px) and (max-width: 412px) and (min-height: 740px) and (max-height: 1000px) {
-                    .content-wrapper {
-                        padding-top: 10rem;
-                    }
-                }
+    @media (min-width: 360px) and (max-width: 412px) and (min-height: 740px) and (max-height: 1000px) {
+        .content-wrapper {
+            padding-top: 10rem;
+        }
+    }
 
-                @media (min-width: 428px) and (max-width: 500px) and (min-height: 926px) and (max-height: 932px) {
-                    .content-wrapper {
-                        padding-top: 10rem;
-                    }
-                }
-            `}</style>
+    @media (min-width: 428px) and (max-width: 500px) and (min-height: 926px) and (max-height: 932px) {
+        .content-wrapper {
+            padding-top: 10rem;
+        }
+    }
+
+    /* Specific media query for 360x800 pixels */
+    @media (max-width: 360px) and (max-height: 800px) {
+        .content-wrapper {
+            padding-top: 7rem !important; /* Increase this value as needed */
+            /* Test to ensure this style is applied */
+        }
+
+       
+    }
+`}</style>
+
+
         </div>
     );
 };
