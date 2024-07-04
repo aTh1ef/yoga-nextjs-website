@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/yogacon.png" type="image/png" />
         <title>Yoga Tech AI</title>
-        <meta name="description" content="Your page description" />
+        <meta name="description" content="Your Personal Virtual Fitness Assistant" />
       </Head>
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full">
