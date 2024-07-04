@@ -11,9 +11,9 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
     return (
-        <div className='bg-primary/60 h-full'>
+        <div className='bg-primary/60 h-full flex flex-col justify-center'>
             {/* Container for text */}
-            <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
+            <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 flex flex-col justify-center'>
                 <div className='text-center flex flex-col justify-start xl:pt-20 xl:text-left h-full container mx-auto px-4 sm:px-6 lg:px-8 content-wrapper'>
                     {/* Title */}
                     <motion.h1
@@ -36,17 +36,13 @@ const Home = () => {
                     >
                         Yoga Tech AI combines advanced pose detection with personalized guidance for a tailored yoga experience. Whether you&apos;re a beginner or expert, our platform supports your practice and helps you discover the path to wellness and self-discovery. Let this platform be your companion on your yoga journey.
                     </motion.p>
-                    {/* Projects button for small screens */}
-                    <div className='flex justify-center xl:hidden relative mb-6 sm:mb-8'>
-                        <ProjectsBtn />
-                    </div>
-                    {/* Projects button for larger screens */}
+                    {/* Projects button for all screen sizes */}
                     <motion.div
                         variants={fadeIn('down', 0.4)}
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='hidden xl:flex'
+                        className='flex justify-center xl:justify-start z-20 relative'
                     >
                         <ProjectsBtn />
                     </motion.div>
@@ -75,36 +71,16 @@ const Home = () => {
             </motion.div>
 
             <style jsx>{`
-    @media (min-width: 400px) and (max-width: 428px) and (min-height: 844px) and (max-height: 926px) {
-        .content-wrapper {
-            padding-top: 10rem !important;
-        }
-    }
+                .content-wrapper {
+                    padding-top: 15vh;
+                }
 
-    @media (min-width: 360px) and (max-width: 412px) and (min-height: 740px) and (max-height: 1000px) {
-        .content-wrapper {
-            padding-top: 10rem;
-        }
-    }
-
-    @media (min-width: 428px) and (max-width: 500px) and (min-height: 926px) and (max-height: 932px) {
-        .content-wrapper {
-            padding-top: 10rem;
-        }
-    }
-
-    /* Specific media query for 360x800 pixels */
-    @media (max-width: 360px) and (max-height: 800px) {
-        .content-wrapper {
-            padding-top: 7rem !important; /* Increase this value as needed */
-            /* Test to ensure this style is applied */
-        }
-
-       
-    }
-`}</style>
-
-
+                @media (min-width: 1280px) {
+                    .content-wrapper {
+                        padding-top: 20vh;
+                    }
+                }
+            `}</style>
         </div>
     );
 };
