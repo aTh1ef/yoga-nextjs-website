@@ -34,7 +34,7 @@ const Home = () => {
                         exit='hidden'
                         className='max-w-xs sm:max-w-sm lg:max-w-xl mx-auto xl:mx-0 mb-8 sm:mb-10 lg:mb-16 text-sm sm:text-base lg:text-lg'
                     >
-                        Yoga Tech AI combines advanced pose detection with personalized guidance for a tailored yoga experience. Whether you&apos;re a beginner or expert, our platform supports your practice and helps you discover the path to wellness and self-discovery. Let this platform be your companion on your yoga journey.
+                        Yoga Tech AI combines advanced pose detection with personalized guidance for a tailored yoga experience. Whether you&apos;re a beginner or expert, our platform supports your practice and helps you discover the path to wellness. Let this platform be your companion on your yoga journey.
                     </motion.p>
                     {/* Projects button for all screen sizes */}
                     <motion.div
