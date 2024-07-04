@@ -35,7 +35,7 @@ const Services = () => {
                             exit="hidden"
                             className='mb-4 max-w-[400px] mx-auto lg:mx-0'
                         >
-                            This section highlights our additional services, including a yoga chatbot for answering your yoga-related queries, an AI health calculator to assess your health status, and a model to upload yoga poses and detect them.
+                            This section highlights our additional services, including a yoga chatbot for answering your yoga-related queries, an AI health calculator to assess your health status, and also a link to Tim Senesi&apos;s YouTube channel where you can learn yoga through his videos and guidance.
                         </motion.p>
                     </div>
 
