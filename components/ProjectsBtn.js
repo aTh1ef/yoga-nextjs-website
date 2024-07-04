@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ProjectsBtn = () => {
     return (
-        <Link href="https://github.com/aTh1ef/AI-Chatbot/settings/pages" target="_blank" rel="noopener noreferrer">
+        <Link href="https://instructions-page.vercel.app/" target="_blank" rel="noopener noreferrer">
             <div className='mx-auto xl:mx-0'>
                 <div className='relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat cursor-pointer'>
                     <Image
