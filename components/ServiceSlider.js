@@ -26,13 +26,13 @@ const serviceData = [
         icon: <RxDesktop />,
         title: 'Yoga Chatbot',
         description: 'Ask your yoga queries here for expert guidance and support.',
-        link: 'http://127.0.0.1:5503/gemini.html', // Add the link to the development section
+        link: 'https://ai-chatbot-pi-virid.vercel.app/', // Add the link to the development section
     },
     {
         icon: <RxReader />,
         title: 'AI Health Calculator',
         description: 'Get sugesstions to improve your health here ',
-        link: 'http://127.0.0.1:5502/index.html',
+        link: 'https://ai-calculator-sigma.vercel.app/',
     },
     {
         icon: <RxCrop />,
