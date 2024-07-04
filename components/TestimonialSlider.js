@@ -3,21 +3,21 @@ export const testimonialData = [
   {
     image: '/t-avt-1.png',
     name: 'Anne Smith',
-    position: 'Customer',
+    position: 'User',
     message:
       'This platform has been incredibly helpful in getting me started with yoga.',
   },
   {
     image: '/t-avt-2.png',
     name: 'Jane',
-    position: 'Customer',
+    position: 'User',
     message:
       'I completed all 6 levels of yoga, and the chatbot helped solve many of my questions along the way.',
   },
   {
     image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    name: 'Alex',
+    position: 'User',
     message:
       "It's surprising how this platform uses AI and machine learning to make yoga so enjoyable. Honestly, it's really impressive!",
   },
