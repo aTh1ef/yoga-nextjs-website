@@ -79,7 +79,7 @@ const About = () => {
                 }}
             >
                 <p className='mb-6 text-sm md:text-base leading-relaxed'>
-                    This project was developed by <span className='font-bold text-red-400'>Ateef Hussain Sheikh</span> and includes features such as a live AI model for yoga assistance using PoseNet, p5.js, ml5.js, an AI health calculator, an AI Chatbot powered by the Gemini API and also a link to Tim Senesi's YouTube channel where you can learn yoga through his videos as part of a secret collaboration with him. The website is built using Next.js and Tailwind CSS.
+                    This project was developed by <span className='font-bold text-red-400'>Ateef Hussain Sheikh</span> and includes features such as a live AI model for yoga assistance using PoseNet, p5.js, ml5.js, an AI health calculator, an AI Chatbot powered by the Gemini API and also a link to Tim Senesi&apos;s YouTube channel where you can learn yoga through his videos as part of a secret collaboration with him. The website is built using Next.js and Tailwind CSS.
                 </p>
 
                 <ContactInfo />
